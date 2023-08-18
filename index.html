@@ -13,7 +13,7 @@
       background-color: #f5f5f5;
     }
     .container {
-      max-width: 800px;
+      max-width: 900px;
       margin: 0 auto;
       background-color: #fff;
       padding: 20px;
@@ -57,7 +57,7 @@
 .principal {
   font-weight: bold;
   color: darkblue;
-  font-size: 60px;
+  font-size: 2rem;
   text-shadow: 2px 2px 4px lightslategray;
   
 }
@@ -69,8 +69,7 @@
   text-align: left;
 }
 #presentacion {
-  font-weight: bold;
-  font-size: 20px;
+  font-size: 1.1rem;
   color: black;
 }
 
@@ -124,7 +123,7 @@ a {
 <div class="container" id="contenidoDesplegable2" style="display: none;">
     <!-- Contenido que deseas mostrar cuando se hace clic en el botón -->
     <section id="presentacion">
-        <h2>Apresentação do Aplicativo</h2>
+        <h1 class="principal">Apresentação do Aplicativo</h1>
         <p>O aplicativo quando aberto mostra um painel "produtos" onde o vendedor pode adicionar produtos totalmente personalizáveis 
           (dados oferecidos pela empresa) a uma lista.</p>
         <p>Depois de ter selecionado todo o necessário para que o cliente deve adicionar
@@ -132,10 +131,11 @@ a {
         <p>Em seguida, acesse o painel Visualizar onde você vê a lista completa e você pode retirar algum produto, 
           se necessário, ou voltar e adicionar mais.</p> 
         <p>No final, crie um arquivo PDF e possa compartilhá-lo por vários meios, seja pelo WhatsApp, E.mail ou outros.</p>   
+        <p>Devo enfatizar que o aplicativo é desenvolvido 100% nativo do Android e pode ser modificado absolutamente qualquer conteúdo / aspeto.</p>   
           
     </section>
     <section id="video" style="width: 100%; max-width: 100%;">
-      <h2>Vídeo de Apresentação</h2>
+      <h1 class="principal">Vídeo de Apresentação</h1>
       <div style="position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
           <video style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
               <source src="video_presentacion.mp4" type="video/mp4">
@@ -236,20 +236,20 @@ a {
     btnDesplegar.addEventListener('click', () => {
         if (contenidoDesplegable.style.display === 'none') {
             contenidoDesplegable.style.display = 'block';
-            btnDesplegar.textContent = 'Ocultar Detalles';
+            btnDesplegar.textContent = 'Resumo';
         } else {
             contenidoDesplegable.style.display = 'none';
-            btnDesplegar.textContent = 'Mostrar Detalles';
+            btnDesplegar.textContent = 'Ocultar Detalles';
         }
     });
     
     btnDesplegar2.addEventListener('click', () => {
         if (contenidoDesplegable2.style.display === 'none') {
             contenidoDesplegable2.style.display = 'block';
-            btnDesplegar2.textContent = 'Ocultar Detalles ';
+            btnDesplegar2.textContent = 'Ocultar Detalles';
         } else {
             contenidoDesplegable2.style.display = 'none';
-            btnDesplegar2.textContent = 'Mostrar Detalles ';
+            btnDesplegar2.textContent = 'Apresentação do Aplicativo';
         }
     });
 </script>
