@@ -26,7 +26,9 @@
     p {
       color: #666;
       line-height: 1.6;
+    
     }
+    
     ul {
       list-style: none;
       padding-left: 0;
@@ -37,7 +39,7 @@
       font-weight: bold;
       display: inline-block;
       width: 1em;
-      margin-left: -1em;
+      
     }
     .contact-button {
       display: inline-block;
@@ -47,20 +49,14 @@
       text-decoration: none;
       border-radius: 4px;
     }
-    .derecha {
-  position: absolute;
-  border: 2px solid darkred;
-  right: 0;
-  top: 0;
-  width: 150px;
-}
-.principal {
+ 
+    .principal {
   font-weight: bold;
   color: darkblue;
   font-size: 2rem;
   text-shadow: 2px 2px 4px lightslategray;
   
-}
+  }
 .superform {
   background-color: lightslategray;
   border: 2px solid darkblue;
@@ -76,21 +72,26 @@
 hr {
   border: none;
   height: 2px;
-  background-color: darkblue;
-  margin: 20px 0;
+  background-color:  #2ecc71;
+  margin: 10px 0;
 }
 
 form>p,label {
   font-size: 20px;
-  color: darkred;
+  color: darkblue;
 }
 th {
   color: rgb(32, 32, 129);
   background-color: lightslategray;
 }
+li{
+  margin-left: 4px;
+  margin-bottom: 5px
+     
+}
 h2 {
   font-weight: bold;
-  color: darkred;
+  color: darkblue;
   font-size: 30px;
 }
 a {
@@ -236,17 +237,17 @@ a {
     btnDesplegar.addEventListener('click', () => {
         if (contenidoDesplegable.style.display === 'none') {
             contenidoDesplegable.style.display = 'block';
-            btnDesplegar.textContent = 'Resumo';
+            btnDesplegar.textContent = 'Ocultar Resumen';
         } else {
             contenidoDesplegable.style.display = 'none';
-            btnDesplegar.textContent = 'Ocultar Detalles';
+            btnDesplegar.textContent = 'Resumo';
         }
     });
     
     btnDesplegar2.addEventListener('click', () => {
         if (contenidoDesplegable2.style.display === 'none') {
             contenidoDesplegable2.style.display = 'block';
-            btnDesplegar2.textContent = 'Ocultar Detalles';
+            btnDesplegar2.textContent = 'Ocultar Presentacion';
         } else {
             contenidoDesplegable2.style.display = 'none';
             btnDesplegar2.textContent = 'Apresentação do Aplicativo';
